@@ -1,11 +1,17 @@
 package com.dayeon.study.springboot.web;
 
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
+import static org.hamcrest.Matchers.is;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.test.web.servlet.MockMvc;
 
-@WebMvcTest(HelloControllerTest.class) // 여러 스프링 어노테이션 중 Web(Spring MVC)에 집중할 수 있는 어노테이션(@Controller, @ControllerAdvice 사용 가능)
+@WebMvcTest(HelloController.class) // 여러 스프링 어노테이션 중 Web(Spring MVC)에 집중할 수 있는 어노테이션(@Controller, @ControllerAdvice 사용 가능)
 public class HelloControllerTest {
     @Autowired // 스프링이 관리하는 빈 주입
     private MockMvc mvc; // 웹 API를 테스트(HTTP GET, POST 등에 대한 테스트)할 때 사용, 스프링 MVC 테스트의 시작점
