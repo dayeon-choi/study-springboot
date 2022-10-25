@@ -1,4 +1,4 @@
-package com.dayeon.study.springboot.dto;
+package com.dayeon.study.springboot.web.dto;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

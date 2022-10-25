@@ -1,6 +1,5 @@
 package com.dayeon.study.springboot.web.dto;
 
-import com.dayeon.study.springboot.dto.HelloResponseDto;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;

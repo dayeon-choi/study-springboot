@@ -19,7 +19,9 @@ test { // (2)
 }
 
 dependencies {
-    //(3)
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+
+    // (3)
     implementation('org.springframework.boot:spring-boot-starter-web')
     implementation('org.springframework.boot:spring-boot-starter-mustache')
 
