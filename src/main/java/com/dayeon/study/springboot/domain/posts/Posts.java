@@ -1,5 +1,6 @@
 package com.dayeon.study.springboot.domain.posts;
 
+import com.dayeon.study.springboot.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,7 +11,7 @@ import javax.persistence.*;
 @NoArgsConstructor  // 롬복 어노테이션: 기본 생성자 자동 추가, Public Post(){}와 같은 효과
 @Getter             // 롬복 어노테이션: 클래스 내 모든 필드의 Getter 메소드 자동 생성
 @Entity             // JPA 제공 어노테이션: 테이블과 링크될 클래스임을 나타냄, 기본값으로 카멜클래스 이름을 언어 스코어 네이밍으로 테이블 이름 매칭
-public class Posts {
+public class Posts extends BaseTimeEntity {
     @Id             // 해당 테이블 PK 필드
     @GeneratedValue(strategy = GenerationType.IDENTITY) // PK 생성 규칙
     private Long id;
