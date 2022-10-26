@@ -1,9 +1,11 @@
 {{>layout/header}}
 
-<h1>게시글 등록</h1>
+<div class="container text-center py-5">
+    <h1>게시글 등록</h1>
+</div>
 
-<div class="col-md-12">
-    <div class="col-md-4">
+<div class="col-md-12 mt-2">
+    <div class="col-md-4 mx-auto">
         <form>
             <div class="form-group">
                 <label for="title">제목</label>
@@ -21,8 +23,10 @@
             </div>
         </form>
 
-        <a href="/" role="button" class="btn btn-secondary">취소</a>
-        <button type="button" class="btn btn-primary" id="btn-save">등록</button>
+        <div class="d-flex justify-content-end mt-4">
+            <a href="/" role="button" class="btn btn-secondary mr-2">취소</a>
+            <button type="button" class="btn btn-primary" id="btn-save">등록</button>
+        </div>
     </div>
 </div>
 
